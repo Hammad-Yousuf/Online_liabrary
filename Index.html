@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/Common.css" />
+    <link rel="stylesheet" href="./CSS/Styles.css" />
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+    <title>The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+
+    <header class="text-center p-2">
+      <img
+        src="./Images/Logo.png"
+        alt="The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran"
+        title="The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran"
+        class="logo"
+      />
+    </header>
+
+    <!-- Navbar Section -->
+
+    <nav class="navbar w-100 text-center navbar-expand-md sticky-top p-1">
+      <div class="mobile_logo" id="mobile_logo">
+        <img src="./Images/Favicon.png" alt="" />
+      </div>
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon-custom">
+          <i class="fad fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto text-white">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown_container">
+            <a class="nav-link dropdown-toggler" id="dropdown-toggler"
+              >Liabrary <i class="far fa-chevron-down"></i
+            ></a>
+            <div class="drop_menu" id="drop_menu">
+              <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                  <a href="All.html" class="nav-link">Qadyaniat</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Tafseer</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Tarjuma Quran</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Hadees</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Hayat Us Sahaba</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Seerat Un Nabi</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Islamic History</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="mobile_logo" id="mobile_logo_right">
+        <img src="./Images/Favicon.png" alt="" />
+      </div>
+    </nav>
+
+    <a href=""></a>
+    <!-- Landing Section -->
+
+    <section id="landing_section">
+      <div class="blur"></div>
+      <div class="container landing_section_container">
+        <div class="landing_text_container">
+          <h1 class="landing_head" lang="arabic">دی ان سپوکن</h1>
+          <p class="landing_text">
+            <span class="islamic">Islamic Books</span> <span class="liabrary">Liabrary</span>
+          </p>
+        </div>
+        <div class="search_container">
+          <input
+            type="text"
+            name="Search"
+            id="landing_search"
+            placeholder="Search......."
+            class="landing_search"
+          />
+          <button class="search_icon">
+            <i class="fas fa-search search_main_icon"></i>
+          </button>
+        </div>
+      </div>
+      <a href=""></a>
+    </section>
+    <section id="books_slider" class="container-fluid">
+      <div class="popular_main_container">
+        <h1 class="popular_heading slider_heading">Popluar Books</h1>
+        <div class="container popular_books_container books_main_container">
+          <button id="left_scroll" class="scroll_btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <!-- Book Container -->
+          <div class="books_container" id="popular_container"></div>
+          <!-- ===========X=====X======X======= -->
+          <button id="right_scroll" class="scroll_btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+      <div class="recommended_main_container">
+          <h1 class="recommended_heading slider_heading mt-4">Recommended Books</h1>
+          <div class="container recommended_books_container books_main_container">
+              <button id="rec_left_scroll" class="scroll_btn">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <!-- Book Container -->
+              <div class="books_container" id="rec_container"></div>
+              <!-- ===========X=====X======X======= -->
+              <button id="rec_right_scroll" class="scroll_btn">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+          </div>          
+      </div>
+
+      </section>
+   <!-- Optional JavaScript; choose one of the two! -->
+    <script src="./JS/Script.js"></script>
+    <script src="./JS/common.js"></script>
+    <script src="./JS/popular_books/popular_books_container.js"></script>
+    <script src="./JS/popular_books/popular_books.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
