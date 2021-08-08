@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+:root{
+    --green : #013030;
+    --light-green: #085050;
+    --gold : #c1986c;
+    --gray: #ebeaea;
+    --font : 'Alegreya Sans SC', sans-serif;
+}
+*{
+    font-family: var(--font);
+}
+body{
+    z-index: -1;
+}
+nav{
+    background: var(--green);
+}
+nav ul li a{
+    color: #fff !important;
+}
+nav ul li a:hover{
+    color: var(--gold) !important;
+}
+.mobile_logo{
+    display: none;
+}
+.mobile_logo img{
+    width: 3em;
+}
+
+.navbar-toggler{
+    border: 2px solid var(--gold);
+    margin-left: 1em;
+}
+.dropdown_container{
+    position: relative;
+    cursor: pointer;
+}
+.drop_menu{
+    position: absolute;
+    background: var(--green);
+    min-width: 100%;
+    width: max-content;
+    text-align: left;
+    display: none;
+}
+.open{
+    display: block !important;
+}
+.drop_menu li{
+    padding: 0 1em;
+}
+.drop_menu li:hover{
+    background: var(--light-green);
+}
+@media (max-width: 768px){
+    #mobile_logo{
+        display: none !important;
+    }
+    .logo{
+        width: 12em;
+    }
+    nav{
+        padding: 0 1em;
+    }
+    .mobile_logo{
+        display: none;
+        transform: scale(0);
+        transition: transform 1s ease-in-out;
+        transition-delay: 1s;
+    }
+    #mobile_logo_right{
+        transform: scale(0);
+        transition: transform 1s ease-in-out;
+        transition-delay: 1s;
+    }
+    .mobile_logo img{
+        width: 3.2em;
+    }
+    .navbar-toggler-icon-custom{
+        color: var(--gold);
+        font-size: 1.3em;
+    }
+}
+
