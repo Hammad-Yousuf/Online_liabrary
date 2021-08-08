@@ -22,6 +22,11 @@
   scroll-behavior: smooth;
   height: auto;
 }
+@media (max-width: 768px) {
+  .books_container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .book {
   height: 20em;
   box-shadow: 0 10px 20px black;
