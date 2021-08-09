@@ -58,39 +58,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto text-white">
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="Index.html" class="nav-link"><i class="mx-1 fas fa-home"></i>Home</a></li>
           <li class="nav-item dropdown_container">
-            <a class="nav-link dropdown-toggler" id="dropdown-toggler"
-              >Liabrary <i class="far fa-chevron-down"></i
-            ></a>
-            <div class="drop_menu" id="drop_menu">
-              <ul class="navbar-nav flex-column">
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Qadyaniat</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Tafseer</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Tarjuma Quran</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Hadees</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Hayat Us Sahaba</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Seerat Un Nabi</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">Islamic History</a>
-                </li>
-              </ul>
-            </div>
+            <a class="nav-link dropdown-toggler" href="./All.html" id="dropdown-toggler"><i class="mx-1 fad fa-book-open"></i>Liabrary</i></a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="fad fa-address-card mx-1"></i>About Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"><i class="mx-1 fad fa-sms"></i>Contact Us</a></li>
         </ul>
       </div>
       <div class="mobile_logo" id="mobile_logo_right">
@@ -101,18 +74,21 @@
     <section>
       <div class="all_main_container">
           <h1 class="all_heading slider_heading mt-4">All Books</h1>
-            <div class="list_container text-center">
+            <div class="list_container text-center mt-4 mb-4">
                 <select name="categories" id="categories">
                     <option value="all">All</option>
+                    <option value="seerat un nabi">Seerat Un Nabi</option>
+                    <option value="tafseer">Tafseer Ul Quran</option>
                     <option value="islaah">Islaah</option>
                     <option value="fatwa">Fatwa</option>
                     <option value="history">History</option>
+                    <option value="poetry">Poetry</option>
                 </select>
-                <button id="search" class="border">Search</button>
+                <button id="search">Search</button>
             </div>
           <div class="container all_books_container books_main_container">
               <!-- Book Container -->
-              <div class="books_container bg-info" id="all_container"></div>
+              <div class="books_container" id="all_container"></div>
               <!-- ===========X=====X======X======= -->
           </div>          
       </div>
