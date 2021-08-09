@@ -41,21 +41,21 @@
 }
 .landing_head {
   font-size: 5em;
-  font-weight: 700;
+  font-weight: 900;
   color: var(--green);
   -webkit-text-stroke: 2px var(--gold);
-  line-height: 1.2;
-  font-family: var(--urdu_font);
-  text-align: center;
+  line-height: 0.5;
+  font-family: var(--font);
+  /* text-align: center; */
 }
 .landing_text {
   font-size: 2em;
   font-weight: 500;
   line-height: 1.5;
-  /* width: fit-content; */
+  width: fit-content;
   color: var(--gold);
   -webkit-text-stroke: 1px var(--green);
-  text-align: center;
+  /* text-align: center; */
 }
 
 .landing_text .islamic {
