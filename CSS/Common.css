@@ -16,6 +16,11 @@
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--light-green); 
+    height: 4em !important;
+    border-radius: 80px;
+    border: 2px solid transparent;  
+    padding: 1em;
+    background-clip: padding-box;
   }
 ::selection{
     background: var(--green);
