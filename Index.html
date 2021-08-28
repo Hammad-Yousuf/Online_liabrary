@@ -58,7 +58,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto text-white">
-          <li class="nav-item"><a href="Index.html" class="nav-link"><i class="mx-1 fas fa-home"></i>Home</a></li>
+          <li class="nav-item"><a href="Index.html" class="nav-link"><i class="mx-1 fad fa-home"></i>Home</a></li>
           <li class="nav-item dropdown_container">
             <a class="nav-link dropdown-toggler" href="./All.html" id="dropdown-toggler"><i class="mx-1 fad fa-book-open"></i>Liabrary</i></a>
           </li>
@@ -77,10 +77,11 @@
     <section id="landing_section">
       <div class="blur"></div>
       <div class="container landing_section_container">
-        <div class="landing_text_container">
-          <h1 class="landing_head">The Unspoken</h1>
-          <p class="landing_text">
-            <span class="islamic">Islamic Books</span> <span class="liabrary">Liabrary</span>
+        <div class="landing_text_container text-center">
+          <h1 class="landing_head" lang="urdu">دِی اَن٘  سّپُوکَنٗ</h1>
+          <p class="landing_text mx-auto">
+            <!-- <span class="islamic">Islamic Books</span> <span class="liabrary">Liabrary</span> -->
+            Islmic Books Liabrary
           </p>
         </div>
         <div class="search_container">
@@ -98,16 +99,6 @@
       </div>
       <a href=""></a>
     </section>
-
-    <!-- Amazon Add -->
-    <section style="width: 100%; height: 20vh; background: #000;">
-      
-    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=tf_til&ad_type=product_link&tracking_id=195803b-20&marketplace=amazon&amp;region=US&placement=B079QHML21&asins=B079QHML21&linkId=b41734ebbfb28a811adbd114381ce618&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066C0&bg_color=FFFFFF">
-    </iframe>
-    <iframe src="//rcm-na.amazon-adsystem.com/e/cm?o=1&p=13&l=ez&f=ifr&linkID=3cdbf7efa565c75a49d2ebc9943fce74&t=195803b-20&tracking_id=195803b-20" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-    </section>
-    <!-- ============ -->
-
     <section id="books_slider" class="container-fluid">
       <div class="popular_main_container">
         <h1 class="popular_heading slider_heading">Popluar Books</h1>
@@ -137,13 +128,22 @@
               </button>
           </div>          
       </div>
-
+      </section>
+      <section id="authors">
+        <h1 class="slider_heading">Authors</h1>
+        <div class="authors_container" id="authors_container">
+        </div>
       </section>
    <!-- Optional JavaScript; choose one of the two! -->
     <script src="./JS/Script.js"></script>
     <script src="./JS/common.js"></script>
     <script src="./JS/popular_books/popular_books_container.js"></script>
     <script src="./JS/popular_books/popular_books.js"></script>
+    <script src="./JS/recommended_books/recommended_books_container.js"></script>
+    <script src="./JS/recommended_books/recommended_books.js"></script>
+    <script src="./JS/authors/authors_container.js"></script>
+    <script src="./JS/authors/authors.js"></script>
+    <script src="./JS/All_books.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -43,18 +43,21 @@
   font-size: 5em;
   font-weight: 900;
   color: var(--green);
-  -webkit-text-stroke: 2px var(--gold);
+  /* -webkit-text-stroke: 2px var(--gold); */
+  text-shadow: 2px 4px 0 var(--gold);
   line-height: 0.5;
   font-family: var(--font);
   /* text-align: center; */
 }
 .landing_text {
-  font-size: 2em;
-  font-weight: 500;
-  line-height: 1.5;
+  font-size: 2.2em;
+  font-weight: 900;
+  line-height: 2;
+  letter-spacing: 2px;
   width: fit-content;
-  color: var(--gold);
-  -webkit-text-stroke: 1px var(--green);
+  color: var(--green);
+  /* -webkit-text-stroke: 1px var(--green); */
+  text-shadow: 3px 2px 0 var(--gold);
   /* text-align: center; */
 }
 

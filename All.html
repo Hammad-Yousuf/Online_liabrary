@@ -58,7 +58,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto text-white">
-          <li class="nav-item"><a href="Index.html" class="nav-link"><i class="mx-1 fas fa-home"></i>Home</a></li>
+          <li class="nav-item"><a href="Index.html" class="nav-link"><i class="mx-1 fad fa-home"></i>Home</a></li>
           <li class="nav-item dropdown_container">
             <a class="nav-link dropdown-toggler" href="./All.html" id="dropdown-toggler"><i class="mx-1 fad fa-book-open"></i>Liabrary</i></a>
           </li>
@@ -71,32 +71,53 @@
       </div>
     </nav>
     <!-- Landing Section -->
-    <section>
+    <section id="main">
       <div class="all_main_container">
           <h1 class="all_heading slider_heading mt-4">All Books</h1>
+            
             <div class="list_container text-center mt-4 mb-4">
-                <select name="categories" id="categories">
-                    <option value="all">All</option>
-                    <option value="seerat un nabi">Seerat Un Nabi</option>
-                    <option value="tafseer">Tafseer Ul Quran</option>
-                    <option value="islaah">Islaah</option>
-                    <option value="fatwa">Fatwa</option>
-                    <option value="history">History</option>
-                    <option value="poetry">Poetry</option>
+              <div class="search_bar">
+                <input type="text" id="search_bar" placeholder="Search Keyword">
+              </div>
+              <select name="categories" id="categories">
+                <option value="all">All Categories</option>
+                <option value="seerat un nabi">Seerat Un Nabi</option>
+                <option value="tafseer">Tafseer Ul Quran</option>
+                <option value="islaah">Islaah</option>
+                <option value="fatwa">Fatwa</option>
+                <option value="history">History</option>
+                <option value="poetry">Poetry</option>
+              </select>
+              <select name="authors" id="author">
+                  <option value="all">All Authors</option>
+                  <option value="Mufti Taqi Usmani Saheb D.B">Mufti Taqi Usmani Saheb D.B</option>
+                  <option value="Hazrat Molana Ashraf Ali Thanvi Saheb R.A">Hazrat Molana Ashraf Ali Thanvi Saheb R.A</option>
+                  <option value="Molana Ilyas Ghumman Saheb D.B">Molana Ilyas Ghumman Saheb D.B</option>
+                  <option value="Muhammad Maqsood Ahmed">Muhammad Maqsood Ahmed</option>
+                  <option value="Mufti Rafi Usmani Saheb D.B">Mufti Rafi Usmani Saheb D.B</option>
+                  <option value="Molana Muhammad Zakariya Kandhalwi R.A">Molana Muhammad Zakariya Kandhalwi R.A</option>
+                  <option value="Mufti Amjad Saheb D.B">Mufti Amjad Saheb D.B</option>
+                  <option value="Peer Zulfiqar Ahmed Naqshbandi Saheb D.B">Peer Zulfiqar Ahmed Naqshbandi Saheb D.B</option>
+                  <option value="Hazrat Molana Shah Hakeem Muhammad Akhter Saheb R.A">Hazrat Molana Shah Hakeem Muhammad Akhter Saheb R.A</option>
+                  <option value="Akbar Illahabadi">Akbar Illahabadi</option>
+                  <option value="Allama Muhammad Iqbal R.A">Allama Muhammad Iqbal R.A</option>
+                  <option value="Molana Muhammad Yousuf Ludhyanwi Shaheed R.A">Molana Muhammad Yousuf Ludhyanwi Shaheed R.A</option>
+                  <option value="Mufti Muhammad Shafi Usmani Saheb R.A">Mufti Muhammad Shafi Usmani Saheb R.A</option>
+                  <option value="Molana Muhammad Idrees Kandhalwi Saheb R.A">Molana Muhammad Idrees Kandhalwi Saheb R.A</option>
                 </select>
-                <button id="search">Search</button>
-            </div>
-          <div class="container all_books_container books_main_container">
+              </div>
+            <div class="container all_books_container books_main_container">
               <!-- Book Container -->
               <div class="books_container" id="all_container"></div>
               <!-- ===========X=====X======X======= -->
-          </div>          
-      </div>
-      <a href=""></a>
-      </section>
-   <!-- Optional JavaScript; choose one of the two! -->
-    <script src="./JS/Script.js"></script>
-    <script src="./JS/common.js"></script>
+            </div>          
+          </div>
+          <a href=""></a>
+        </section>
+        <!-- Optional JavaScript; choose one of the two! -->
+        <script src="./JS/Script.js"></script>
+        <script src="./JS/common.js"></script>
+    <script src="./js/authors/authors_container.js"></script>
     <script src="./JS/All_books_container.js"></script>
     <script src="./JS/All_books.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
