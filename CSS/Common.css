@@ -2,7 +2,7 @@
 /* width */
 ::-webkit-scrollbar{
     background: var(--gold);
-    width: 16px;
+    width: 14px;
 }
 ::-webkit-scrollbar-thumb{
     background: var(--green);
