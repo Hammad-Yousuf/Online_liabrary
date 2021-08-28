@@ -13,12 +13,13 @@
   ::-webkit-scrollbar-thumb {
     background: var(--green);
     border-radius: 80px;
-    border: 4px solid transparent !important ;
+    border: 4px solid transparent !important;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--light-green); 
+    border: 4px solid transparent !important;
   }
 ::selection{
     background: var(--green);
