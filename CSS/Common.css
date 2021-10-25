@@ -116,6 +116,7 @@ footer{
 
 .footer_nav{
     display: flex;
+    flex-wrap: wrap;
     width: fit-content;
     list-style: none;
     color: #9e7f4f;
