@@ -62,8 +62,8 @@
           <li class="nav-item dropdown_container">
             <a class="nav-link dropdown-toggler" href="./All.html" id="dropdown-toggler"><i class="mx-1 fad fa-book-open"></i>Liabrary</i></a>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="fad fa-address-card mx-1"></i>About Us</a></li>
-          <li class="nav-item"><a href="#" class="nav-link"><i class="mx-1 fad fa-sms"></i>Contact Us</a></li>
+          <li class="nav-item"><a href="About.html" class="nav-link"><i class="fad fa-address-card mx-1"></i>About Us</a></li>
+          <li class="nav-item"><a href="Contact.html" class="nav-link"><i class="mx-1 fad fa-sms"></i>Contact Us</a></li>
         </ul>
       </div>
       <div class="mobile_logo" id="mobile_logo_right">
@@ -80,16 +80,18 @@
                 <input type="text" id="search_bar" placeholder="Search Keyword">
               </div>
               <select name="categories" id="categories">
-                <option value="all">All Categories</option>
+                <option value="all">Select Category</option>
                 <option value="seerat un nabi">Seerat Un Nabi</option>
                 <option value="tafseer">Tafseer Ul Quran</option>
                 <option value="islaah">Islaah</option>
                 <option value="fatwa">Fatwa</option>
                 <option value="history">History</option>
                 <option value="poetry">Poetry</option>
+                <option value="other">Others</option>
               </select>
               <select name="authors" id="author">
-                  <option value="all">All Authors</option>
+                  <option value="all">Select Authors</option>
+                  <option value="Shah Waliullah Muhadis Dehalvi R.A">Hazrat Shah Waliullah Muhadis Dehalvi R.A</option>
                   <option value="Mufti Taqi Usmani Saheb D.B">Mufti Taqi Usmani Saheb D.B</option>
                   <option value="Hazrat Molana Ashraf Ali Thanvi Saheb R.A">Hazrat Molana Ashraf Ali Thanvi Saheb R.A</option>
                   <option value="Molana Ilyas Ghumman Saheb D.B">Molana Ilyas Ghumman Saheb D.B</option>
@@ -114,10 +116,29 @@
           </div>
           <a href=""></a>
         </section>
+        <Footer>
+          <div class="container-fluid d-flex">
+            <div class="container-fluid">
+              <a href="./Index.html" class="footer_title">TheUnspoken.com</a>
+            </div>
+            <div class="footer_nav_container">
+              <ul class="footer_nav">
+                <li class="footer_nav_item"><a href="./Index.html" class="footer_nav_link">Home</a></li>
+                |
+                <li class="footer_nav_item"><a href="./All.html" class="footer_nav_link">Liabrary</a></li>
+                |
+                <li class="footer_nav_item"><a href="About.html" class="footer_nav_link">About Us</a></li>
+                |
+                <li class="footer_nav_item"><a href="Contact.html" class="footer_nav_link">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </Footer>
         <!-- Optional JavaScript; choose one of the two! -->
         <script src="./JS/Script.js"></script>
         <script src="./JS/common.js"></script>
     <script src="./js/authors/authors_container.js"></script>
+    <script src="./JS/authors/authors.js"></script>
     <script src="./JS/All_books_container.js"></script>
     <script src="./JS/All_books.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
