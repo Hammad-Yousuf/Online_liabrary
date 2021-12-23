@@ -90,7 +90,7 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 50px ;
-    background: #fff;
+    background: var(--white);
     padding: 1.5em 1.5em;
     box-shadow: 2em 2em 10px rgb(206, 206, 206);
 }

@@ -1,0 +1,45 @@
+:root{
+    --green : #013030;
+    --light-green: #085050;
+    --gold : #c1986c;
+    --golden: #c2823d;
+    --gray: #ebeaea;
+    --white: #fff;
+}
+
+.dark{
+    --green: #382e35 !important;
+    --golden: #A29F99 !important;
+    --gray: #777472 !important;
+    --white: #777472 !important;
+}
+
+body{
+    transition: all 250ms ease-in-out;
+}
+
+
+
+.toggler_container{
+    height: 1.3em;
+    aspect-ratio: 1/.4;
+    background: #000;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.toggler_btn{
+    background: red;
+    width: 1.7em;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.2em;
+    transition: all 250ms ease-in-out;
+    display: grid;
+    place-items: center;
+}
+
+.toggled{
+    right: 0;
+}

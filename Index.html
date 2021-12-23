@@ -14,6 +14,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./CSS/Common.css" />
     <link rel="stylesheet" href="./CSS/Styles.css" />
+    <!-- <link rel="stylesheet" href="./CSS/DarkModeToggler.css"> -->
     <!-- FontAwesome -->
     <link
       rel="stylesheet"
@@ -21,20 +22,23 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
     <title>The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran</title>
   </head>
-  <body>
+  <body onload="loader()">
     <!-- Header Section -->
 
     <header class="text-center p-2">
-      <img
+      <a href="Index.html">
+        <img
         src="./Images/Logo.png"
         alt="The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran"
         title="The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran"
         class="logo"
       />
+      </a>
     </header>
 
     <!-- Navbar Section -->
@@ -69,9 +73,14 @@
       <div class="mobile_logo" id="mobile_logo_right">
         <img src="./Images/Favicon.png" alt="" />
       </div>
+
+      <!-- <div class="toggler_container" id="toggler_container">
+        <div id="toggler_btn" class="toggler_btn">
+          <i class="fal fa-sun"></i>
+        </div>
+      </div> -->
     </nav>
 
-    <a href=""></a>
     <!-- Landing Section -->
 
     <section id="landing_section">
@@ -134,6 +143,46 @@
           </div>          
       </div>
       </section>
+      <section id="sitemap">
+        <div class="sitemap_container">
+          <div class="sitemap_row_one">
+            <div class="row_head">
+              <h3>Main Pages</h3>
+            </div>
+            <ul class="navbar-nav sitemap-nav">
+              <li class="sitemap-item"><a href="./Index.html" class="sitemap-link">Home</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Liabrary</a></li>
+              <li class="sitemap-item"><a href="./Contact.html" class="sitemap-link">Contact Us</a></li>
+              <li class="sitemap-item"><a href="./About.html" class="sitemap-link">About Us</a></li>
+            </ul>
+          </div>
+          <div class="sitemap_row_two">
+            <div class="row_head">
+              <h3>Languages</h3>
+            </div>
+            <ul class="sitemap-nav">
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Urdu Books</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">English Books</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Arabic Books</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Persian Books</a></li>
+            </ul>
+          </div>
+          <div class="sitemap_row_three">
+            <div class="row_head">
+              <h3>Categories</h3>
+            </div>
+            <ul class="sitemap-nav">
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Islamic</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">History</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Poetry</a></li>
+              <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Politics</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="loader_container" id="loader_container">
+        <img src="./Images/Favicon.png" id="loader">
+      </div>
       <Footer>
         <div class="container-fluid d-flex">
           <div class="container-fluid">
@@ -155,6 +204,8 @@
    <!-- Optional JavaScript; choose one of the two! -->
     <script src="./JS/Script.js" defer></script>
     <script src="./JS/common.js"></script>
+    <script src="./Js/loader.js"></script>
+    <!-- <script src="./Js/darkModeToggler.js"></script> -->
     <script src="./JS/popular_books/popular_books_container.js"></script>
     <script src="./JS/popular_books/popular_books.js"></script>
     <script src="./JS/recommended_books/recommended_books_container.js"></script>

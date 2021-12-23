@@ -8,6 +8,8 @@ List Of Books Added :
   4: Duroos ul quraan
   5: Fatawa e usmani
   6: Adaab e muashrat
+  7: Al Fauz ul Kabeer
+  8: Aab e Hayat
 
 
   */
@@ -15,6 +17,22 @@ List Of Books Added :
 let popular_books_array = `
 {
     "popular": [
+      {
+        "name": "Al fauz ul kabeer",
+        "author": "Shah Waliullah Muhadis Dehalvi R.A",
+        "category": "other",
+        "volume_available": false,
+        "src": "",
+        "front_src": "./Images/Books Front/Others/Al Fauz ul Kabeer/Al Fauz ul Kabeer.png"
+    },
+    {
+        "name": "Aab e hayaat",
+        "author": "Molana Qasim Nanotvi R.A",
+        "category": "other",
+        "volume_available": false,
+        "src": "",
+        "front_src": "./Images/Books Front/Others/Aab e Hayat/Aab e Hayat.png"
+    },
       {
         "name": "Ashraf Ut Tafaseer",
         "author": "Mufti Taqi Usmani Saheb",

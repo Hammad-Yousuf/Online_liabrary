@@ -25,7 +25,7 @@
     <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
     <title>The Unspoken - Islamic Books Liabrary - Tafseer Ul Quran</title>
   </head>
-  <body>
+  <body onload="loader()">
     <!-- Header Section -->
 
     <header class="text-center p-2">
@@ -74,47 +74,89 @@
     <section id="main">
       <div class="all_main_container">
           <h1 class="all_heading slider_heading mt-4">All Books</h1>
-            
-            <div class="list_container text-center mt-4 mb-4">
+<!--             
+            <div class="filter_btn_container">
+              <button id="filter_btn" class="far fa-chevron-down"></button>
+            </div> -->
+
+            <div id="filter_container" class="list_container text-center mt-4 mb-4">
               <div class="search_bar">
-                <input type="text" id="search_bar" placeholder="Search Keyword">
+                <input type="text" id="search_bar"  placeholder="Search Keyword">
               </div>
+              <select name="language" id="language">
+                <option value="all">Select language</option>
+                <option value="urdu">Urdu</option>
+                <option value="arabic">Arabic</option>
+                <option value="persian">Persian</option>
+                <option value="english">English</option>
+              </select>
               <select name="categories" id="categories">
-                <option value="all">Select Category</option>
+                <!-- <option value="all">Select Category</option>
                 <option value="seerat un nabi">Seerat Un Nabi</option>
                 <option value="tafseer">Tafseer Ul Quran</option>
                 <option value="islaah">Islaah</option>
                 <option value="fatwa">Fatwa</option>
                 <option value="history">History</option>
                 <option value="poetry">Poetry</option>
-                <option value="other">Others</option>
+                <option value="other">Others</option> -->
               </select>
               <select name="authors" id="author">
-                  <option value="all">Select Authors</option>
-                  <option value="Shah Waliullah Muhadis Dehalvi R.A">Hazrat Shah Waliullah Muhadis Dehalvi R.A</option>
-                  <option value="Mufti Taqi Usmani Saheb D.B">Mufti Taqi Usmani Saheb D.B</option>
-                  <option value="Hazrat Molana Ashraf Ali Thanvi Saheb R.A">Hazrat Molana Ashraf Ali Thanvi Saheb R.A</option>
-                  <option value="Molana Ilyas Ghumman Saheb D.B">Molana Ilyas Ghumman Saheb D.B</option>
-                  <option value="Muhammad Maqsood Ahmed">Muhammad Maqsood Ahmed</option>
-                  <option value="Mufti Rafi Usmani Saheb D.B">Mufti Rafi Usmani Saheb D.B</option>
-                  <option value="Molana Muhammad Zakariya Kandhalwi R.A">Molana Muhammad Zakariya Kandhalwi R.A</option>
-                  <option value="Mufti Amjad Saheb D.B">Mufti Amjad Saheb D.B</option>
-                  <option value="Peer Zulfiqar Ahmed Naqshbandi Saheb D.B">Peer Zulfiqar Ahmed Naqshbandi Saheb D.B</option>
-                  <option value="Hazrat Molana Shah Hakeem Muhammad Akhter Saheb R.A">Hazrat Molana Shah Hakeem Muhammad Akhter Saheb R.A</option>
-                  <option value="Akbar Illahabadi">Akbar Illahabadi</option>
-                  <option value="Allama Muhammad Iqbal R.A">Allama Muhammad Iqbal R.A</option>
-                  <option value="Molana Muhammad Yousuf Ludhyanwi Shaheed R.A">Molana Muhammad Yousuf Ludhyanwi Shaheed R.A</option>
-                  <option value="Mufti Muhammad Shafi Usmani Saheb R.A">Mufti Muhammad Shafi Usmani Saheb R.A</option>
-                  <option value="Molana Muhammad Idrees Kandhalwi Saheb R.A">Molana Muhammad Idrees Kandhalwi Saheb R.A</option>
-                </select>
+              </select>
+              </div>
+              <div class="results text-right">
+                showing results (<span id="results"></span>)
               </div>
             <div class="container all_books_container books_main_container">
               <!-- Book Container -->
-              <div class="books_container" id="all_container"></div>
+              <div class="books_container" id="all_container">
+
+              </div>
               <!-- ===========X=====X======X======= -->
             </div>          
           </div>
           <a href=""></a>
+        </section>
+
+        <div class="loader_container" id="loader_container">
+          <img src="./Images/Favicon.png" id="loader">
+        </div>
+
+        <section id="sitemap">
+          <div class="sitemap_container">
+            <div class="sitemap_row_one">
+              <div class="row_head">
+                <h3>Main Pages</h3>
+              </div>
+              <ul class="navbar-nav sitemap-nav">
+                <li class="sitemap-item"><a href="./Index.html" class="sitemap-link">Home</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Liabrary</a></li>
+                <li class="sitemap-item"><a href="./Contact.html" class="sitemap-link">Contact Us</a></li>
+                <li class="sitemap-item"><a href="./About.html" class="sitemap-link">About Us</a></li>
+              </ul>
+            </div>
+            <div class="sitemap_row_two">
+              <div class="row_head">
+                <h3>Languages</h3>
+              </div>
+              <ul class="sitemap-nav">
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Urdu Books</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">English Books</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Arabic Books</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Persian Books</a></li>
+              </ul>
+            </div>
+            <div class="sitemap_row_three">
+              <div class="row_head">
+                <h3>Categories</h3>
+              </div>
+              <ul class="sitemap-nav">
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Islamic</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">History</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Poetry</a></li>
+                <li class="sitemap-item"><a href="./All.html" class="sitemap-link">Politics</a></li>
+              </ul>
+            </div>
+          </div>
         </section>
         <Footer>
           <div class="container-fluid d-flex">
@@ -135,8 +177,11 @@
           </div>
         </Footer>
         <!-- Optional JavaScript; choose one of the two! -->
+        <script src="./JS/categories_container.js"></script>
+        <script src="./JS/category.js"></script>
         <script src="./JS/Script.js"></script>
         <script src="./JS/common.js"></script>
+        <script src="./JS/loader.js"></script>
     <script src="./js/authors/authors_container.js"></script>
     <script src="./JS/authors/authors.js"></script>
     <script src="./JS/All_books_container.js"></script>

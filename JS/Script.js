@@ -1,3 +1,4 @@
+localStorage.setItem("name", "Hammad")
 // console.log(recommended_container);
 // Popular Books
 const pop_books_container = document.getElementById("popular_container");
@@ -46,3 +47,20 @@ rec_right_btn.addEventListener("click", () => {
     document.getElementById("rec_container").scrollBy(800, 0);
   }
 });
+
+document.querySelectorAll('.author').forEach(e => {
+    e.addEventListener('click',()=>{
+        let x = e.title
+        localStorage.setItem('author_selected', x);
+    })
+})
+// let your = localStorage.getItem("author_selected")
+
+
+// Contact Form
+
+document.getElementById('form_btn').addEventListener('click', ()=>{
+  setTimeout(()=>{
+    alert('Thank You our Agent will Contact you Soon')
+  }, 1000)
+})

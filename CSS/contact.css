@@ -22,7 +22,7 @@
 .icon-container{
     display: grid;
     place-items: center;
-    background: #fff;
+    background: var(--white);
     width: 13vh;
     height: 13vh;
     border-radius: 50%;
@@ -35,7 +35,7 @@
     background: var(--gold);
 }
 .contact-card:hover .icon{
-    color: #fff;
+    color: var(--white);
 }
 .icon{
     font-size: 1.5rem;
@@ -57,7 +57,7 @@
     margin-bottom: 10vh;
 }
 .card-text{
-    color: #fff;
+    color: var(--white);
 }
 /* Contact Form */
 
